@@ -1,0 +1,36 @@
+:root{
+    --black: rgba(44, 62, 80, 1);
+    --verde: rgb(26, 188, 156);
+    --bianco: rgb(255,255,255);
+    --headfoot: rgb(44, 62, 80);
+    --footer: rgb(58, 84, 109);
+    
+}
+/* common */
+body{
+    background-color: var(--bianco);
+    color: var(--black);
+}
+.bg-green{
+    background-color: var(--verde);
+}
+.bg-footer{
+    background-color: var(--footer);
+}
+.bg-headfoot{
+    background-color: var(--headfoot);
+}
+
+/* header */
+header{
+    background-color: var(--black);
+    position: fixed;
+    height: 90px;
+    top: 0;
+    width: 100%;
+}
+
+/* main */
+main{
+    margin-top: 100px;
+}
