@@ -1,5 +1,5 @@
 :root{
-    --nero: rgb rgb(30, 30, 30);
+    --nero: rgb(30, 30, 30);
     --verde: rgb(26, 188, 156);
     --bianco: rgb(255,255,255);
     --headfoot: rgb(44, 62, 80, 1);
@@ -13,6 +13,7 @@ body{
 
 .bg-green{
     background-color: var(--verde);
+    color: var(--bianco);
 }
 .bg-footer{
     background-color: var(--footer);
@@ -52,11 +53,14 @@ img.avatar{
 .star:before , .star:after{
     content: "";
     display: block;
-    background-color: var(--bianco);
+    background-color: var(--bianco); /* modificare qui colore */
     height: 3px;
     width: 40%;
 }
 #portfolio .star:before , #portfolio .star:after{
+    background-color: var(--nero);
+}
+#contact .star:before , #contact .star:after{
     background-color: var(--nero);
 }
 .layover-container{
@@ -84,4 +88,14 @@ img.avatar{
 .gvpt-10{
     padding-top: 20px;
     border-radius: 10px; /* controllare qui */
+}
+.border{
+    border: 1px solid var(--bianco);
+}
+li{
+    border-bottom: 1px solid var(--nero);
+    list-style-type: none;
+}
+.p-150{
+    padding-bottom: 150px;
 }
