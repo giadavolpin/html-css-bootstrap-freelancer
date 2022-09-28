@@ -83,4 +83,5 @@ img.avatar{
 }
 .gvpt-10{
     padding-top: 20px;
+    border-radius: 10px; /* controllare qui */
 }
