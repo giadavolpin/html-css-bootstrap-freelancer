@@ -1,16 +1,16 @@
 :root{
-    --black: rgba(44, 62, 80, 1);
+    --nero: rgb rgb(30, 30, 30);
     --verde: rgb(26, 188, 156);
     --bianco: rgb(255,255,255);
-    --headfoot: rgb(44, 62, 80);
+    --headfoot: rgb(44, 62, 80, 1);
     --footer: rgb(58, 84, 109);
     
 }
 /* common */
 body{
-    background-color: var(--bianco);
-    color: var(--black);
+    color: var(--nero);
 }
+
 .bg-green{
     background-color: var(--verde);
 }
@@ -20,10 +20,15 @@ body{
 .bg-headfoot{
     background-color: var(--headfoot);
 }
+.bianco{
+    color: var(--bianco);
+}
+.nero{
+    color: var(--nero);
+}
 
 /* header */
 header{
-    background-color: var(--black);
     position: fixed;
     height: 90px;
     top: 0;
@@ -31,6 +36,48 @@ header{
 }
 
 /* main */
-main{
-    margin-top: 100px;
+#hero{
+    padding-top: 100px;
+}
+img.avatar{
+    width: 45px;
+    
+}
+.star{
+    width: 300px;
+}
+.star .fa-solid.fa-star{
+    width: 20%;
+}
+.star:before , .star:after{
+    content: "";
+    display: block;
+    background-color: var(--bianco);
+    height: 3px;
+    width: 40%;
+}
+#portfolio .star:before , #portfolio .star:after{
+    background-color: var(--nero);
+}
+.layover-container{
+    cursor: pointer;
+}
+.layover-container::after{
+    content: "+";
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(26, 188, 156, .5);
+    font-size: 80px;
+    font-weight: 800;
+    color: var(--bianco);
+
+    opacity: 0;
+    transition: opacity 1000ms;
+}
+.layover-container:hover::after{
+    opacity: 1;
 }
