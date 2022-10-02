@@ -99,3 +99,6 @@ li{
 .p-150{
     padding-bottom: 150px;
 }
+.verde{
+    color: var(--verde);
+}
